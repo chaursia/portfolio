@@ -20,7 +20,7 @@ const projects = [
     image: "/assets/project-2.png",
     github: "https://github.com/chaursia/speaksout",
     demo: "https://speaksout.vercel.app/index.html",
-    tag: "Full Stack",
+    tag: "Full Stack : Prototype",
     description: "An anonymous platform for college students to share thoughts and connect.",
   },
   {
@@ -39,7 +39,7 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             className="text-5xl md:text-6xl font-black text-slate-900 font-display mb-6 tracking-tight"
@@ -78,7 +78,7 @@ export default function Projects() {
                       alt={project.title}
                     />
                     <div className="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-md rounded-full text-[10px] font-bold text-indigo-600 uppercase tracking-widest border border-indigo-100">
-                       {project.tag}
+                      {project.tag}
                     </div>
                   </div>
                 </CardItem>
