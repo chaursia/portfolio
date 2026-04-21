@@ -51,11 +51,11 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 relative bg-tertiary/10">
+    <section id="contact" className="py-16 md:py-24 relative bg-tertiary/10">
       <div className="absolute inset-0 dot-grid opacity-5" />
       
       <div className="container mx-auto px-4 max-w-6xl">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           <ScrollReveal type="slide">
             <div>
               <div className="inline-flex items-center gap-2 bg-accent text-white border-2 border-foreground px-4 py-1 rounded-full hard-shadow-active mb-6">
@@ -63,7 +63,7 @@ export default function Contact() {
                 <span className="font-bold text-sm uppercase">Say Hello</span>
               </div>
               
-              <h2 className="font-display font-extrabold text-6xl md:text-8xl mb-8 leading-none">
+              <h2 className="font-display font-extrabold text-5xl md:text-8xl mb-6 md:mb-8 leading-none">
                 Let's <span className="text-accent underline decoration-8 decoration-secondary">Connect</span>
               </h2>
               
@@ -106,7 +106,7 @@ export default function Contact() {
           </ScrollReveal>
 
           <ScrollReveal type="pop" delay={0.2}>
-            <div className="bg-white border-4 border-foreground p-10 rounded-[40px] hard-shadow-pink relative overflow-hidden">
+            <div className="bg-white border-4 border-foreground p-6 md:p-10 rounded-[30px] md:rounded-[40px] hard-shadow-pink relative overflow-hidden">
               <div className="absolute top-0 right-0 w-24 h-24 bg-tertiary -mr-8 -mt-8 rotate-45 border-b-4 border-foreground" />
               
               <form onSubmit={handleSubmit} className="space-y-6 relative z-10">

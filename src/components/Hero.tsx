@@ -21,7 +21,7 @@ export default function Hero() {
   return (
     <section 
       ref={containerRef}
-      className="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden bg-background"
+      className="relative min-h-screen pt-24 md:pt-32 pb-12 md:pb-20 flex items-center justify-center overflow-hidden bg-background"
     >
       {/* 1. Dynamic Background Layer */}
       <div className="absolute inset-0 dot-grid -z-10 opacity-30" />
@@ -83,7 +83,7 @@ export default function Hero() {
               </div>
 
               {/* Huge Headline */}
-              <h1 className="font-display font-extrabold text-7xl md:text-8xl lg:text-[110px] leading-[0.9] mb-8 tracking-tighter">
+              <h1 className="font-display font-extrabold text-5xl sm:text-6xl md:text-8xl lg:text-[110px] leading-[0.9] mb-8 tracking-tighter">
                 Crafting <br />
                 <span className="text-accent relative inline-block">
                   Digital
@@ -107,10 +107,10 @@ export default function Hero() {
               </p>
 
               {/* Candy Buttons */}
-              <div className="flex flex-wrap gap-6">
+              <div className="flex flex-wrap gap-4 md:gap-6">
                 <button 
                   onClick={() => scrollTo("#projects")}
-                  className="group relative bg-accent text-white px-10 py-5 rounded-full border-2 border-foreground font-display font-black text-xl hard-shadow bounce-transition hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-[10px_10px_0px_0px_#1E293B] active:translate-x-[2px] active:translate-y-[2px] active:shadow-[2px_2px_0px_0px_#1E293B] flex items-center gap-3 overflow-hidden"
+                  className="group relative bg-accent text-white px-6 py-4 md:px-10 md:py-5 rounded-full border-2 border-foreground font-display font-black text-lg md:text-xl hard-shadow bounce-transition hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-[10px_10px_0px_0px_#1E293B] active:translate-x-[2px] active:translate-y-[2px] active:shadow-[2px_2px_0px_0px_#1E293B] flex items-center gap-3 overflow-hidden"
                 >
                   <span className="relative z-10">See the magic</span>
                   <div className="relative z-10 bg-white rounded-full p-1 group-hover:rotate-45 transition-transform">
@@ -120,7 +120,7 @@ export default function Hero() {
                 
                 <button 
                   onClick={() => scrollTo("#contact")}
-                  className="bg-white text-foreground px-10 py-5 rounded-full border-2 border-foreground font-display font-black text-xl hover:bg-quaternary transition-colors bounce-transition active:scale-95 flex items-center gap-3"
+                  className="bg-white text-foreground px-6 py-4 md:px-10 md:py-5 rounded-full border-2 border-foreground font-display font-black text-lg md:text-xl hover:bg-quaternary transition-colors bounce-transition active:scale-95 flex items-center gap-3"
                 >
                   Hire me
                   <MousePointer2 size={24} />
@@ -130,10 +130,10 @@ export default function Hero() {
           </div>
 
           {/* 4. Image/Asset Side */}
-          <div className="order-1 lg:order-2 flex justify-center">
+          <div className="order-1 lg:order-2 flex justify-center mt-10 lg:mt-0">
             <motion.div
               style={{ y: y2, scale }}
-              className="relative w-full max-w-[500px] aspect-square"
+              className="relative w-full max-w-[320px] md:max-w-[400px] lg:max-w-[500px] aspect-square"
             >
               {/* Decorative Frame */}
               <div className="absolute -inset-6 border-4 border-foreground rounded-[60px] -rotate-3 -z-10" />

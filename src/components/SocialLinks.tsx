@@ -21,7 +21,7 @@ export default function SocialLinks() {
             <MessageCircle size={16} />
             <span className="font-bold text-sm uppercase">Stay Connected</span>
           </div>
-          <h2 className="font-display font-extrabold text-5xl md:text-7xl mb-12">
+          <h2 className="font-display font-extrabold text-4xl sm:text-5xl md:text-7xl mb-10 md:mb-12">
             Find Me <span className="text-accent italic">Online</span>
           </h2>
         </ScrollReveal>
@@ -33,10 +33,10 @@ export default function SocialLinks() {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex flex-col items-center gap-4"
+                className="group flex flex-col items-center gap-3 md:gap-4"
               >
-                <div className={`w-24 h-24 ${social.color} border-4 border-foreground rounded-[30px] flex items-center justify-center hard-shadow bounce-transition group-hover:translate-x-[-4px] group-hover:translate-y-[-4px] group-hover:shadow-[12px_12px_0px_0px_#1E293B] group-hover:rotate-6`}>
-                  <social.icon size={40} className="text-white" />
+                <div className={`w-20 h-20 md:w-24 md:h-24 ${social.color} border-4 border-foreground rounded-[24px] md:rounded-[30px] flex items-center justify-center hard-shadow bounce-transition group-hover:translate-x-[-4px] group-hover:translate-y-[-4px] group-hover:shadow-[12px_12px_0px_0px_#1E293B] group-hover:rotate-6`}>
+                  <social.icon size={32} className="text-white md:w-[40px] md:h-[40px]" />
                 </div>
                 <span className="font-display font-black text-xl uppercase tracking-tighter group-hover:text-accent transition-colors">
                   {social.name}

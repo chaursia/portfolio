@@ -38,19 +38,19 @@ const cards = [
 
 export default function About() {
   return (
-    <section id="about" className="py-32 relative overflow-hidden bg-white">
+    <section id="about" className="py-16 md:py-32 relative overflow-hidden bg-white">
       {/* Background patterns */}
       <div className="absolute top-0 right-0 w-1/3 h-full dot-grid opacity-10 -z-10" />
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-tertiary/5 rounded-full blur-3xl -z-10" />
 
       <div className="container mx-auto px-4 max-w-6xl">
-        <div className="flex flex-col items-center text-center mb-24">
+        <div className="flex flex-col items-center text-center mb-16 md:mb-24">
           <ScrollReveal>
             <div className="inline-flex items-center gap-2 bg-muted border-2 border-foreground px-4 py-1 rounded-full hard-shadow-active mb-6">
               <User size={16} />
               <span className="font-display font-black text-xs uppercase tracking-widest">The Background</span>
             </div>
-            <h2 className="font-display font-extrabold text-6xl md:text-8xl mb-8 tracking-tighter">
+            <h2 className="font-display font-extrabold text-5xl md:text-8xl mb-6 md:mb-8 tracking-tighter">
               A story of <span className="text-secondary italic">pixels</span> & <span className="text-accent underline decoration-8 decoration-tertiary/30">logic</span>.
             </h2>
             <p className="font-sans text-xl text-muted-foreground max-w-2xl leading-relaxed">
@@ -61,12 +61,12 @@ export default function About() {
           </ScrollReveal>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-10 mb-32">
+        <div className="grid md:grid-cols-3 gap-6 md:gap-10 mb-20 md:mb-32">
           {cards.map((card, index) => (
             <ScrollReveal key={card.title} delay={index * 0.15}>
               <motion.div 
                 whileHover={{ y: -10, rotate: index % 2 === 0 ? 1 : -1 }}
-                className="group relative bg-white border-4 border-foreground p-10 rounded-[40px] hard-shadow-hover bounce-transition h-full"
+                className="group relative bg-white border-4 border-foreground p-6 md:p-10 rounded-[30px] md:rounded-[40px] hard-shadow-hover bounce-transition h-full"
               >
                 {/* Icon Container */}
                 <div className={`w-20 h-20 ${card.color} border-4 border-foreground rounded-2xl flex items-center justify-center hard-shadow-active mb-8 group-hover:rotate-6 transition-transform relative`}>
@@ -104,11 +104,11 @@ export default function About() {
             <ScrollReveal key={stat.label} delay={0.5 + index * 0.1}>
               <div className="relative group">
                 <div className="absolute inset-0 bg-foreground translate-x-2 translate-y-2 rounded-3xl -z-10 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform" />
-                <div className="bg-white border-4 border-foreground p-8 rounded-3xl text-center">
+                <div className="bg-white border-4 border-foreground p-6 md:p-8 rounded-3xl text-center">
                   <motion.div 
                     initial={{ scale: 0.5 }}
                     whileInView={{ scale: 1 }}
-                    className="font-display font-black text-5xl md:text-6xl mb-2 text-foreground"
+                    className="font-display font-black text-4xl sm:text-5xl md:text-6xl mb-2 text-foreground"
                   >
                     {stat.value}
                   </motion.div>

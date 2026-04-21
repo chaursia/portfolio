@@ -43,15 +43,15 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-32 relative bg-white">
+    <section id="projects" className="py-16 md:py-32 relative bg-white">
       <div className="container mx-auto px-4 max-w-6xl">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-24 gap-10">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-24 gap-6 md:gap-10">
           <ScrollReveal>
             <div className="inline-flex items-center gap-2 bg-secondary text-white border-2 border-foreground px-4 py-1 rounded-full hard-shadow-active mb-6">
               <Layers size={16} />
               <span className="font-display font-black text-xs uppercase tracking-widest text-white">The Portfolio</span>
             </div>
-            <h2 className="font-display font-extrabold text-6xl md:text-8xl tracking-tighter">
+            <h2 className="font-display font-extrabold text-5xl md:text-8xl tracking-tighter">
               Selected <span className="text-secondary italic">Works</span>.
             </h2>
           </ScrollReveal>
@@ -70,7 +70,7 @@ export default function Projects() {
             <ScrollReveal key={project.title} delay={index * 0.15}>
               <motion.div 
                 whileHover={{ y: -8 }}
-                className={`group relative h-full bg-white border-4 border-foreground rounded-[40px] p-8 md:p-12 ${project.shadow} bounce-transition`}
+                className={`group relative h-full bg-white border-4 border-foreground rounded-[30px] md:rounded-[40px] p-6 md:p-12 ${project.shadow} bounce-transition`}
               >
                 {/* Project Header */}
                 <div className="flex flex-col md:flex-row justify-between items-start gap-6 mb-10">
@@ -78,7 +78,7 @@ export default function Projects() {
                     <div className={`inline-block text-${project.color} font-display font-black text-xs uppercase tracking-widest mb-2 px-3 py-1 bg-${project.color}/5 border border-${project.color}/20 rounded-full`}>
                       {project.category}
                     </div>
-                    <h3 className="font-display font-black text-4xl md:text-5xl uppercase tracking-tighter group-hover:text-accent transition-colors">
+                    <h3 className="font-display font-black text-3xl md:text-5xl uppercase tracking-tighter group-hover:text-accent transition-colors">
                       {project.title}
                     </h3>
                   </div>
@@ -137,9 +137,9 @@ export default function Projects() {
           ))}
         </div>
 
-        <div className="mt-32 text-center">
+        <div className="mt-16 md:mt-32 text-center">
           <ScrollReveal>
-            <button className="group relative inline-flex items-center gap-4 bg-tertiary px-12 py-6 rounded-full border-4 border-foreground font-display font-black text-2xl hard-shadow-hover hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-[12px_12px_0px_0px_#1E293B] transition-all">
+            <button className="group relative inline-flex items-center gap-4 bg-tertiary px-8 md:px-12 py-4 md:py-6 rounded-full border-4 border-foreground font-display font-black text-xl md:text-2xl hard-shadow-hover hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-[12px_12px_0px_0px_#1E293B] transition-all">
               <span>See more experiments</span>
               <div className="bg-white rounded-full p-2 group-hover:rotate-45 transition-transform">
                 <Globe size={32} />
