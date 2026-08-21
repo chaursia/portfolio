@@ -10,7 +10,7 @@ import {
   Code2 as LeetCode,
   ExternalLink
 } from "lucide-react";
-import AnimatedIcon from "@/components/v1/ui/animated-icon";
+import AnimatedIcon from "@/components/ui/animated-icon";
 
 const socialLinks = [
   {

@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Github, Linkedin, ChevronDown, Download, Mail } from "lucide-react";
-import { CardContainer, CardBody, CardItem } from "@/components/v1/ui/3d-card";
-import { TextGenerateEffect } from "@/components/v1/ui/text-generate-effect";
-import Particles from "@/components/v1/ui/particles";
-import AnimatedIcon from "@/components/v1/ui/animated-icon";
+import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import Particles from "@/components/ui/particles";
+import AnimatedIcon from "@/components/ui/animated-icon";
 
 export default function Hero() {
   const scrollTo = (id: string) => {

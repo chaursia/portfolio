@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Mail, Linkedin, Send } from "lucide-react";
-import AnimatedIcon from "@/components/v1/ui/animated-icon";
+import AnimatedIcon from "@/components/ui/animated-icon";
 
 const contacts = [
   {

@@ -3,8 +3,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Briefcase, GraduationCap } from "lucide-react";
-import { TracingBeam } from "@/components/v1/ui/tracing-beam";
-import AnimatedIcon from "@/components/v1/ui/animated-icon";
+import { TracingBeam } from "@/components/ui/tracing-beam";
+import AnimatedIcon from "@/components/ui/animated-icon";
 
 const stats = [
   {

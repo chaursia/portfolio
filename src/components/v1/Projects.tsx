@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { Github, ExternalLink, ChevronDown } from "lucide-react";
-import { CardContainer, CardBody, CardItem } from "@/components/v1/ui/3d-card";
+import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card";
 import { motion } from "framer-motion";
 
 const projects = [

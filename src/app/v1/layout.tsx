@@ -2,10 +2,9 @@
 
 import React from "react";
 import { Inter, Outfit } from "next/font/google";
-import "@/app/globals.css"; // We might need a v1-specific CSS if we want to be perfect
 import Preloader from "@/components/v1/Preloader";
-import CustomCursor from "@/components/v1/ui/custom-cursor";
-import Particles from "@/components/v1/ui/particles";
+import CustomCursor from "@/components/ui/custom-cursor";
+import Particles from "@/components/ui/particles";
 import FloatingJoinUs from "@/components/v1/FloatingJoinUs";
 
 const inter = Inter({
@@ -32,7 +31,7 @@ export default function V1Layout({ children }: { children: React.ReactNode }) {
       <Preloader />
       <FloatingJoinUs />
       {children}
-      
+
       <style jsx global>{`
         .v1-theme {
           --font-sans: 'Inter', sans-serif;

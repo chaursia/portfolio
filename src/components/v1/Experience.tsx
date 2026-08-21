@@ -14,7 +14,7 @@ import {
   Cpu,
   Briefcase
 } from "lucide-react";
-import AnimatedIcon from "@/components/v1/ui/animated-icon";
+import AnimatedIcon from "@/components/ui/animated-icon";
 
 const frontendSkills = [
   { name: "HTML", icon: Layout, color: "text-orange-500", bg: "bg-orange-50" },

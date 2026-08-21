@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   description: "Divyanshu Chaursia is a Frontend Developer specializing in React, Next.js, and modern web architectures. Building intelligent, responsive, and high-performance digital experiences.",
   keywords: ["Frontend Developer", "React Developer", "Next.js", "Web Developer", "UI/UX", "Portfolio", "Divyanshu Chaursia", "AI Enthusiast", "JavaScript", "TypeScript"],
-  authors: [{ name: "Divyanshu Chaursia", url: "https://d" }],
+  authors: [{ name: "Divyanshu Chaursia", url: "https://chaursia.in" }],
   creator: "Divyanshu Chaursia",
   publisher: "Divyanshu Chaursia",
   formatDetection: {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: 'Divyanshu Chaursia Portfolio',
     images: [
       {
-        url: '/assets/chaursia-logo.png', // Assuming this is the logo used in Hero
+        url: '/assets/chaursia-logo.png',
         width: 1200,
         height: 630,
         alt: 'Divyanshu Chaursia Portfolio Preview',
@@ -51,11 +51,11 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Divyanshu Chaursia | Frontend Architect",
     description: "Frontend Developer specializing in React, Next.js, and modern web architectures.",
-    creator: '@divyanshuchaursia', // Update with actual handle if known
+    creator: '@divyanshuchaursia',
     images: ['/assets/chaursia-logo.png'],
   },
   verification: {
-    google: 'googlea085751169a17bd8', // Using the verification string found in workspace
+    google: 'googlea085751169a17bd8',
   },
   robots: {
     index: true,
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${plusJakartaSans.variable} ${outfit.variable} scroll-smooth`}>
-      <body className="bg-background text-foreground selection:bg-secondary selection:text-white">
+      <body className="bg-white font-sans text-slate-900 antialiased selection:bg-indigo-200 selection:text-indigo-900">
         {children}
       </body>
     </html>

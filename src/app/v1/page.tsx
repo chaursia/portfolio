@@ -7,16 +7,15 @@ import Projects from "@/components/v1/Projects";
 import Contact from "@/components/v1/Contact";
 import SocialLinks from "@/components/v1/SocialLinks";
 import Footer from "@/components/v1/Footer";
-import { ScrollReveal } from "@/components/v1/ui/scroll-reveal";
+import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 export default function HomeV1() {
   return (
     <main className="overflow-x-hidden">
       <Navbar />
-      
-      {/* Hero usually has its own entrance animation, but we can layer it */}
+
       <Hero />
-      
+
       <div className="relative z-10 bg-white">
         <ScrollReveal direction="up" distance={80}>
           <About />
