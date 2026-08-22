@@ -25,7 +25,7 @@ export default function Home() {
       <Footer15
         brandName="Chaursia"
         description={
-          "Crafting pixel-perfect digital experiences.\nFrontend Developer & AI Enthusiast building\nintelligent, fast, and reliable products."
+          "Simplicity is prerequisite for reliability - Edsger W. Dijkstra"
         }
         ctaLabel="Get in Touch"
         ctaHref="mailto:divyanshuchaursia@outlook.com"
